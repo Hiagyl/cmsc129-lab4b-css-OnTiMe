@@ -58,7 +58,8 @@ hr {
     gap: 2rem;
     z-index: 1000;
     box-shadow: 0px 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
-    color: #F5E6CA
+    color: #F5E6CA;
+    z-index: 10001;
 }
 
 .navigation {
@@ -91,6 +92,9 @@ br {
     display: none;
 }
 
+.home a[href="#bottomPage"] {
+    top: 12.5rem;
+}
 a[href="#bottomPage"] {
     text-decoration: none;
     font-family: "BeVietnam", sans-serif;
@@ -242,12 +246,12 @@ a[href="#bottomPage"]:hover {
     font-weight: bold;
     font-size: 1rem;
     text-transform: uppercase;
-    color: #DFC7A8;
+    color: #C4A981;
 }
 
 .coffee .term {
     font-style: italic;
-    color: #DFC7A8;
+    color: #C4A981;
 }
 
 .coffee+a {
