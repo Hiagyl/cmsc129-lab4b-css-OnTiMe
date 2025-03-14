@@ -50,9 +50,9 @@ hr {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 2rem;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -66,7 +66,7 @@ hr {
 
 .navigation:hover {
     background: #a67b5b;
-    border-radius: 5px;
+    border-radius: 0.4rem;
 }
 
 .imgBanner {
@@ -171,16 +171,12 @@ a[href="#bottomPage"]:hover {
     margin: 1rem auto 0;
     width: 100%;
     background-color: #5D2500;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
     color: #F5E6CA;
     border-radius: 1rem 1rem 0 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
-.coffee:has(table)~.coffee:last-of-type p:last-of-type {
-    color: red;
-    /* Example style */
-}
 .coffee:has(h2, ol)+.coffee p.definition {
     font-family: "BeVietnam", sans-serif;
         font-size: 1rem;
@@ -192,12 +188,13 @@ a[href="#bottomPage"]:hover {
         width: 65%;
         vertical-align: top;
         background-color: #5D2500;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
         color: #F5E6CA;
         border-radius: 1rem 1rem 1rem 1rem;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
+.coffee:has(table)+.coffee p.definition,
 .coffee p.definition {
     font-family: "BeVietnam", sans-serif;
     font-size: 1rem;
@@ -212,7 +209,7 @@ a[href="#bottomPage"]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #F5E6CA;
     border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 .coffee #bottomPage {
@@ -227,10 +224,10 @@ a[href="#bottomPage"]:hover {
     text-align: center;
     width: 100%;
     background-color: #5D2500;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #FFFFFF;
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
+    color: #F5E6CA;
     border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
     clear: both;
     overflow: hidden;
 }
@@ -245,6 +242,10 @@ a[href="#bottomPage"]:hover {
 .coffee .term {
     font-style: italic;
     color: #6f4e37;
+}
+
+.coffee+a {
+    text-decoration: none
 }
 
 #orderCoffee {
@@ -263,7 +264,6 @@ a[href="#bottomPage"]:hover {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
-    text-decoration: none;
 }
 
 #orderCoffee:hover {
@@ -318,8 +318,8 @@ footer div br {
     background-color: #F5E6CA;
     padding: 1rem 2rem;
     margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    box-shadow: 0px 0.3rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 #coffee_choices {
@@ -334,48 +334,49 @@ footer div br {
     text-align: center;
     color: #5D2500;
     background-color: #F5E6CA;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
 }
-
+/* 
 .coffeeImg {
     width: 6rem !important;
     height: 8rem !important;
     border: 2px solid #8B4513;
     border-radius: 10px;
     padding: 5px;
-}
+} */
 
+.coffeeImg,
 .teamMember {
     width: 6rem !important;
     height: 8rem !important;
-    border: 2px solid #8B4513;
-    border-radius: 10px;
-    padding: 5px;
+    border: 0.1rem solid #8B4513;
+    border-radius: 0.75rem;
+    padding: 0.4rem;
 }
 
 td {
-    border: 2px solid #8B4513;
-    padding: 10px;
+    border: 0.1rem solid #8B4513;
+    padding: 0.75rem;
     justify-content: center;
     justify-items: center;
 }
 
 .label {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.9rem;
     background-color: #f8e5d8;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
 }
 
 .coffee form {
     margin-top: 1rem;
     justify-self: center;
     background-color: #f8e5d8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0.3rem 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
     width: 60%;
     margin-bottom: 1rem;
 }
@@ -384,7 +385,7 @@ td {
     font-weight: bold;
     color: #5A3E36;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
 }
 
 .coffee form input[type="text"],
@@ -393,7 +394,7 @@ td {
     width: 100%;
     padding: 0.5rem;
     border: 0.2rem solid #8B4513;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     font-size: 14px;
     margin-bottom: 0.5rem;
 }
@@ -450,10 +451,10 @@ img[src="Images/Logo.jpg"]+.definition {
         width: 90%;
         vertical-align: top;
         background-color: #5D2500;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
         color: #F5E6CA;
         border-radius: 1rem 1rem 1rem 1rem;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0.3rem 0.75rem rgba(0, 0, 0, 0.2);
 }
 
 .about ul,
@@ -473,32 +474,20 @@ img[src="Images/Logo.jpg"]+.definition {
 }
 
 .coffee:has(#about) table {
-    /* border: 2px solid #5D2500; */
     width: 100%;
     text-align: center;
     background-color: #F5E6CA;
 }
 
-
-/* Target the second .coffee div that has at least 2 <p> elements */
 .coffee:has(p:nth-of-type(2)) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
-    /* Adds spacing between columns */
-}
-
-/* Wrap the text content in a single column */
-.coffee:has(p:nth-of-type(2)) .text-column {
-    flex: 1;
-    /* Allows text to take available space */
-    max-width: 65%;
-    /* Adjust width of the text column */
 }
 
 .coffee:has(p:nth-of-type(2)) img {
     max-width: 30%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
