@@ -1,39 +1,401 @@
 * {
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-table {
-    width: 100%;
-}
-
-td {
-    max-width: 12%;
-    width: 100px;
-}
-
-.coffeeImg {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: lightblue;
+    background-color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.about {
-    background-color: lightgreen;
+header {
+    background-color: #5D2500;
+    position: relative;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: none;
+    border-bottom: none;
+    text-decoration: none;
+    width: 100%;
 }
 
-/* 
-LABORATORY EXERCISE #4
-Your task is to edit this CSS file and design the different web pages (delete the dummy/test code). 
-You are NOT allowed to modify/change the HTML files.
+hr {
+    border-color: #a67b5b;
+    ;
+}
 
-Tips: 
-1. There are some elements that have no classes at all (such as the list of steps in making coffee), to style them, 
-you can use contextual selectors or attribute selectors to select them for styling
-2. Just with any web design project, it's best to draft a wireframe first before you start working with the CSS.
-3. You do not have to select all the classes/ids in the web pages; 
-the main goal is to create a website that is both visually appealing and user-friendly.
-*/
+#welcome {
+    background-color: #5D2500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+.navBar {
+    background: #3e2723;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation:hover {
+    background: #a67b5b;
+    border-radius: 5px;
+}
+
+.imgBanner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+br {
+    display: none;
+}
+
+a[href="#bottomPage"] {
+    text-decoration: none;
+    font-family: "BeVietnam", sans-serif;
+    position: fixed;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    background-color: #F5E6CA;
+    color: #5D2500;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a[href="#bottomPage"]:hover {
+    color: #767B64;
+}
+
+.coffee {
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+
+.coffee ol {
+    padding: 0.2rem;
+    text-align: left;
+    margin: auto 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.coffee ol li {
+    width: 90%;
+    margin: auto;
+    padding: 0.2rem;
+    margin-top: 0%;
+}
+
+.coffee:has(h2, ol)+.coffee+.coffee img {
+    margin-top: 1rem;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    float: left;
+    object-position: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.coffee img {
+    margin-top: 1rem;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.coffee img:hover {
+    transform: scale(1.05);
+}
+
+.coffee h2 {
+    font-family: "BeVietnamMedium", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 1rem auto 0;
+    width: 100%;
+    background-color: #5D2500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #F5E6CA;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.coffee:has(h2, ol)+.coffee p.definition {
+    font-family: "BeVietnam", sans-serif;
+        font-size: 1rem;
+        float: right;
+        line-height: 1.6;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        text-align: center;
+        width: 65%;
+        vertical-align: top;
+        background-color: #5D2500;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: #F5E6CA;
+        border-radius: 1rem 1rem 1rem 1rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.coffee p.definition {
+    font-family: "BeVietnam", sans-serif;
+    font-size: 1rem;
+    /* float: right; */
+    line-height: 1.6;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    width: 65%;
+    vertical-align: top;
+    background-color: #5D2500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #F5E6CA;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.coffee #bottomPage {
+    position: relative;
+    display: block;
+    font-family: "BeVietnam", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 1.5rem;
+    margin: 1rem 0 0 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #5D2500;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    clear: both;
+    overflow: hidden;
+}
+
+.coffee .emphasis {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #f9e9cc;
+}
+
+.coffee .term {
+    font-style: italic;
+    color: #6f4e37;
+}
+
+#orderCoffee {
+    position: relative;
+    display: block;
+    width: fit-content;
+    transform: none;
+    background-color: #F5E6CA;
+    color: #5D2500;
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    font-family: "BeVietnam", sans-serif;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#orderCoffee:hover {
+    background-color: #767B64;
+    color: #371601;
+}
+
+a[href="#title"] {
+    text-decoration: none;
+    font-family: "BeVietnam", sans-serif;
+    position: fixed;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    background-color: #F5E6CA;
+    color: #5D2500;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a[href="#title"]:hover {
+    color: #767B64;
+}
+
+footer {
+    background-color: #5D2500;
+    color: #F5E6CA;
+    text-align: center;
+    padding: 20px;
+    font-family: "BeVietnam", sans-serif;
+}
+
+.contacts {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+footer div br {
+    display: block;
+}
+
+/* Table Styling */
+#coffee_choices {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.coffeeImg {
+    width: 6rem !important;
+    height: 8rem !important;
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.teamMember {
+    width: 6rem !important;
+    height: 8rem !important;
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+td {
+    border: 2px solid #8B4513;
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #f8e5d8;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Styling the form container */
+.coffee form {
+    margin-top: 1rem;
+    justify-self: center;
+    background-color: #f8e5d8;
+    /* Light coffee-colored background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    /* Set a fixed width */
+    /* Center the form */
+}
+
+/* Style labels */
+.coffee form label {
+    font-weight: bold;
+    color: #5A3E36;
+    display: block;
+    /* Make labels appear above inputs */
+    margin-bottom: 5px;
+}
+
+/* Style input fields */
+.coffee form input[type="text"],
+.coffee form input[type="email"],
+.coffee form select {
+    width: 100%;
+    /* Make fields take full width */
+    padding: 8px;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Style dropdown */
+.coffee form select {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* Style submit button */
+.coffee form input[type="submit"] {
+    background-color: #8B4513;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.coffee form input[type="submit"]:hover {
+    background-color: #5A3E36;
+}
